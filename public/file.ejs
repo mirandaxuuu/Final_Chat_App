@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>File</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="socket.io.js"></script>
+	<script src="socket.io-file-client.js"></script>
+</head>
+<body>
+
+	<div id="miranda-chat">
+		<div id="chat-window">
+			<div id='img'>
+				<% if (fileType=="image/jpeg"){ %>
+					<img src="data/<%=fileName%>">
+				<% } else if (fileType=="audio/mpeg") { %>
+					<audio controls>
+					  <source src="data/<%=fileName%>" type="audio/mpeg">
+					</audio>
+				<% } %>
+			</div>
+			<div id="output"></div>
+		</div>
+	</div>
+
+	<script src="chat.js"></script>
+	<script src="file.js"></script>
+
+</body>
+</html>

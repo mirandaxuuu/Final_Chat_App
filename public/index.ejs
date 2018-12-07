@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Magic Chatroom</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="socket.io.js"></script>
+	<script src="socket.io-file-client.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+</head>
+<body>
+
+	<div id="miranda-chat">
+		<div id="chat-window">
+			<div id="output"></div>
+			<div id="feedback"></div>
+		</div>
+		<input id="username" type="text" placeholder="username">
+		<input id="message" type="text" placeholder="message">
+		<button id="send">SEND</button>
+		<input type="file" id="file"/>
+		<button id="upload">UPLOAD</button>
+	</div>
+
+	<script src="chat.js"></script>
+	<script src="file.js"></script>
+
+</body>
+</html>
